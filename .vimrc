@@ -1,7 +1,6 @@
 execute pathogen#infect()
 
 set hidden
-
 " allow unsaved background buffers and remeber mark/undo for them
 set hidden
 " remember more commands and search history
@@ -76,3 +75,18 @@ inoremap <s-tab> <c-n>
 cnoremap %% <C-R>=expand('%:h').'/'<cr>
 map <leader>e :edit %%
 map <leader>v :view %%
+command! W :w
+"switch beteween the last two files
+nnoremap <leader><leader> <c-^>
+
+" Make me learn the keyboard
+noremap <up> <nop>
+nnoremap <down> <nop>
+nnoremap <left> <nop>
+nnoremap <right> <nop>
+inoremap <up> <nop>
+inoremap <down> <nop>
+inoremap <left> <nop>
+inoremap <right> <nop>
+nnoremap j gj
+nnoremap k gk
