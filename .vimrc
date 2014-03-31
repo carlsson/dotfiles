@@ -1,4 +1,5 @@
 execute pathogen#infect()
+set runtimepath^=~/.vim/bundle/ctrlp.vim
 
 set hidden
 " allow unsaved background buffers and remeber mark/undo for them
@@ -90,3 +91,6 @@ inoremap <left> <nop>
 inoremap <right> <nop>
 nnoremap j gj
 nnoremap k gk
+
+let g:ctrlp_map = '<c-p>'
+let g:ctrlp_cmd = 'CtrlP'
